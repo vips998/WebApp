@@ -34,7 +34,7 @@ namespace WebApp.Models
         [StringLength(50)]
         public string? Passport { get; set; }
 
-        public virtual ICollection<Record> Record { get; set; }
+        public virtual ICollection<Record> Record { get; set; } // Коллекция записей
 
     }
 }
