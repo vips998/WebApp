@@ -31,7 +31,7 @@ namespace ASPNetCoreApp.Controllers
                     await _userManager.AddToRoleAsync(user, "user");
                     // Установка куки
                     await _signInManager.SignInAsync(user, false);
-                    return Ok(new { message = "Добавлен новый пользователь: " + user.UserName });
+                    return Ok(new { message = "Добавлен новый пользователь: " + user.UserName, user.UserName });
                 }
                 else
                 {
